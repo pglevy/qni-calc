@@ -4,7 +4,7 @@
 title: Quarantine and Isolation Calculator
 
 # Write a short description for the site. This is used for "meta description."
-description: A PROTOTYPE tool to help determine how long you need to isolate, quarantine, or take other steps to prevent spreading COVID-19.
+description: A tool to help determine how long you need to isolate, quarantine, or take other steps to prevent spreading COVID-19.
 
 # Enable for live hosting on GitHub Pages.
 # It should start with a slash (/) and then match the name of your repository exactly.
