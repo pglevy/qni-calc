@@ -1,0 +1,16 @@
+<fieldset class="usa-fieldset" id="question">    
+    <legend class="usa-legend maxw-tablet">
+        <h1>{{ page.text }}</h1>
+        {{ content }}
+        {% if page.resources %}
+            {% include resource-accordion.html %}
+        {% endif %}
+    </legend>
+    <input type="hidden" id="previous-question" name="previous-question" value="{{ page.back }}">
+    {% for answer in page.answers %}
+    <div class="usa-radio maxw-tablet">
+        <input class="usa-radio__input usa-radio__input--tile" id="{{ page.slug }}{{ forloop.index }}" type="radio" name="{{ page.slug }}" value="{{ answer.path }}">
+        <label class="usa-radio__label" for="{{ page.slug }}{{ forloop.index }}">{{ answer.text }}</label>
+    </div>
+    {% endfor %}
+</fieldset>
