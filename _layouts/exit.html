@@ -1,15 +1,16 @@
 {% include header.html %}
 <main id="main-content" class="grid-container">
-    {{ content }}
-    {% if page.resources %}
+    {% include step-indicator.html %}
+    <div class="measure-4">   
+        {{ content }}
+        {% if page.resources %}
         {% include resource-accordion.html %}
-    {% endif %}
-    <div class="grid-row">
-        <div class="grid-col mobile-lg:grid-col-auto padding-right-05">
-          <a href="{{ page.back }}" id="exitBackButton" class="usa-button usa-button--outline">Back to question</a>
-        </div>
-        <div class="grid-col mobile-lg:grid-col-auto padding-left-05">
-            <button class="usa-button usa-tooltip" data-position="top" title="You've reached the end of the prototype.😁">Continue to filing</button>
+        {% endif %}
+        <div class="grid-row">
+            <div class="grid-col mobile-lg:grid-col-auto padding-right-05">
+                <a href="situation.html" id="startOver" class="usa-button usa-button--outline usa-button--big">Start
+                    over</a>
+            </div>
         </div>
     </div>
 </main>
