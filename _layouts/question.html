@@ -5,10 +5,12 @@
     {% case input %}
     {% when "radio" %}
         {% include radio.html %}
+    {% when "date" %}
+        {% include date-picker.html %}
     {% else %}
         <!-- For a future version, other input types can be incorporated. -->
     {% endcase %}
-    <div class="grid-row">
+    <div class="grid-row margin-top-3">
       <div class="grid-col mobile-lg:grid-col-auto padding-right-05">
         <a href="#back" id="backButton" class="usa-button usa-button--outline">Back</a>
       </div>

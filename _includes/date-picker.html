@@ -1,0 +1,17 @@
+<div class="usa-legend maxw-tablet">
+    <h1>{{ page.text }}</h1>
+    {{ content }}
+    {% if page.resources %}
+    {% include resource-accordion.html %}
+    {% endif %}
+</div>
+<input type="hidden" id="previous-question" name="previous-question" value="{{ page.back }}">
+<input type="hidden" id="next-question" name="next-question" value="{{ page.next }}">
+<div class="usa-form-group" id="question">
+    <label class="usa-label usa-sr-only" id="appointment-date-label" for="appointment-date">Date</label>
+    <div class="usa-hint" id="appointment-date-hint">mm/dd/yyyy</div>
+    <div class="usa-date-picker">
+        <input class="usa-input" id="appointment-date" name="appointment-date" aria-labelledby="appointment-date-label"
+            aria-describedby="appointment-date-hint" />
+    </div>
+</div>

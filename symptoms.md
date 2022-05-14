@@ -10,7 +10,7 @@ answers:
   - text: "Yes, I have symptoms"
     path: question-3
   - text: "No, I don't have symptoms"
-    path: success
+    path: first-date
 
 # Whether this question includes related resources (yes or no)
 # To add resources, create a content page in the "_resources" folder and add this question's filename to the "related-page-name" setting, for example, who.md.

@@ -24,4 +24,17 @@ $( document ).ready(function() {
         $('#nextButton').css('opacity', 1);
     });
 
+    // or when an input is focused...
+    $('#question input').on('focus', function() {
+
+        // set the variable to the value of the selected button
+        var selectedAnswer = $(this).val();
+        // show it in the console
+        console.log(selectedAnswer);
+        // set the url of the next button to the input setting
+        $('#nextButton').attr('href', $('#next-question').val() + ".html");
+        // make the next button look enabled
+        $('#nextButton').css('opacity', 1);
+    });
+
 });
