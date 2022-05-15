@@ -3,6 +3,8 @@ title: What are the symptoms of COVID-19?
 related-page-name:
     - situation.md
     - symptoms.md
+    - results2.md
+    - results3.md
 ---
 
 Symptoms of COVID-19 include:

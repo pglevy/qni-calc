@@ -1,6 +1,8 @@
 ---
 title: What to do for isolation
-related-page-name: results1.md
+related-page-name: 
+- results1.md
+- results4.md
 ---
 
 - Monitor your symptoms. If you have an emergency warning sign, such as trouble breathing or persistent chest pain or pressure, seek emergency medical care immediately.
