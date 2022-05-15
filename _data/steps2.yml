@@ -1,0 +1,8 @@
+# Configure step indicator
+# Status options: completed, current, not completed
+- label: Situation
+  status: completed
+- label: Symptoms
+  status: current
+- label: Results
+  status: not completed
